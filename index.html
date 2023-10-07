@@ -2,47 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Portfolio Website</title>
-    <!----CSS link----->
+    <title>Ahsan's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-	<style>
-img {
-  width: 100px;
-  height: 200px;
-  border-radius: 50%;
-  border: 2px solid blue;
-}
-</style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background-image: url('background.jpg'); /* Add a background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Add more styles as needed */
+    </style>
 </head>
 <body>
-    
     <div class="hero">
         <nav>
-      
-            
             <ul>
-			    <img src="pial.jpg" class="logo" alt="Avatar">
+                <li><img src="pial.jpg" class="logo" alt="Avatar"></li>
                 <li><a href="index">Home</a></li>
                 <li><a href="Other/About">About</a></li>
                 <li><a href="Other/Research">Research</a></li>
                 <li><a href="Other/Contact">Contact</a></li>
-		</ul>
-
+            </ul>
         </nav>
         <div class="content">
-            <span class="title"></span>
             <h1>Hello, I’m <span>Ahsan</span></h1>
             <p>I’m a Machine Learning Researcher</p>
             <a href="Ahsan.pdf" class="btn">Download CV</a>
         </div>
     </div>
-	   <center>
-		<footer>
-			<a href="https://www.linkedin.com/in/israt-zarin/" class="fa fa-linkedin"></a>
-			<a href="mailto:zarindola@gmail.com" class="fa fa-envelope"></a>
-			<a href="https://github.com/ZarinIsrat" class="fa fa-github"></a>
-		</footer>
-		</center>
+    <center>
+        <footer>
+            <a href="https://www.linkedin.com/in/israt-zarin/" class="fa fa-linkedin"></a>
+            <a href="mailto:zarindola@gmail.com" class="fa fa-envelope"></a>
+            <a href="https://github.com/ZarinIsrat" class="fa fa-github"></a>
+        </footer>
+    </center>
 </body>
 </html>

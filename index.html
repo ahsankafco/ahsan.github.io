@@ -12,21 +12,30 @@
             background-image: url('background.jpg'); /* Add an attractive background image */
             background-size: cover;
             color: #fff; /* Text color */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Create a flex container */
         }
 
-        /* Add CSS styles for your hero section */
-        .hero {
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            padding: 100px 0;
+        /* Left side (Content) */
+        .content-container {
+            flex: 1; /* Take up available space */
+            padding: 100px;
             text-align: center;
         }
 
-        .hero h1 {
+        .content {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .content h1 {
             font-size: 3rem;
             margin-bottom: 10px;
         }
 
-        .hero p {
+        .content p {
             font-size: 1.5rem;
         }
 
@@ -44,7 +53,29 @@
             background-color: #0056b3; /* Darker shade on hover */
         }
 
-        /* Add styles for the footer */
+        /* Right side (Exotic Content) */
+        .exotic-container {
+            flex: 1; /* Take up available space */
+            background-image: url('exotic-background.jpg'); /* Add exotic background image */
+            background-size: cover;
+        }
+
+        .exotic-content {
+            padding: 50px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .exotic-content h2 {
+            font-size: 2rem;
+        }
+
+        .exotic-content p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        /* Footer Styles (No change from previous) */
         footer {
             background-color: #333;
             padding: 20px 0;
@@ -65,7 +96,8 @@
     </style>
 </head>
 <body>
-    <div class="hero">
+    <!-- Left side (Content) -->
+    <div class="content-container">
         <nav>
             <ul>
                 <img src="pial.jpg" class="logo" alt="Avatar">
@@ -83,6 +115,17 @@
             <a href="Ahsan.pdf" class="btn">Download CV</a>
         </div>
     </div>
+
+    <!-- Right side (Exotic Content) -->
+    <div class="exotic-container">
+        <div class="exotic-content">
+            <h2>Discover the Exotic</h2>
+            <p>Explore the world of AI and Machine Learning in an exciting journey.</p>
+            <p>Stay tuned for exotic discoveries and innovations!</p>
+        </div>
+    </div>
+
+    <!-- Footer (No change from previous) -->
     <footer>
         <a href="https://www.linkedin.com/in/israt-zarin/" class="fa fa-linkedin"></a>
         <a href="mailto:zarindola@gmail.com" class="fa fa-envelope"></a>

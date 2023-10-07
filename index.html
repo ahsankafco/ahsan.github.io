@@ -3,133 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Portfolio Website</title>
-    <!-- CSS Styles -->
+    <!----CSS link----->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('background.jpg'); /* Add an attractive background image */
-            background-size: cover;
-            color: #fff; /* Text color */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            display: flex; /* Create a flex container */
-        }
-
-        /* Left side (Content) */
-        .content-container {
-            flex: 1; /* Take up available space */
-            padding: 100px;
-            text-align: center;
-        }
-
-        .content {
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            border-radius: 10px;
-            padding: 20px;
-        }
-
-        .content h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .content p {
-            font-size: 1.5rem;
-        }
-
-        .btn {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #0056b3; /* Darker shade on hover */
-        }
-
-        /* Right side (Exotic Content) */
-        .exotic-container {
-            flex: 1; /* Take up available space */
-            background-image: url('exotic-background.jpg'); /* Add exotic background image */
-            background-size: cover;
-        }
-
-        .exotic-content {
-            padding: 50px;
-            text-align: center;
-            color: #fff;
-        }
-
-        .exotic-content h2 {
-            font-size: 2rem;
-        }
-
-        .exotic-content p {
-            font-size: 1.2rem;
-            margin-top: 20px;
-        }
-
-        /* Footer Styles (No change from previous) */
-        footer {
-            background-color: #333;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .fa {
-            font-size: 24px;
-            margin: 10px;
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .fa:hover {
-            color: #007bff; /* Change color on hover */
-        }
+	<style>
+    img {
+        width: 100px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid blue;
+    }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- Left side (Content) -->
-    <div class="content-container">
+    
+    <div class="hero">
         <nav>
             <ul>
                 <img src="pial.jpg" class="logo" alt="Avatar">
                 <li><a href="index">Home</a></li>
                 <li><a href="Other/About">About</a></li>
                 <li><a href="Other/Research">Research</a></li>
-                <li><a href="Other/Portfolio">Portfolio</a></li>
-                <li><a href="Other/Blog">Blog</a></li>
+                <li><a href="Other/Portfolio">Portfolio</a></li> <!-- Added Portfolio option -->
+                <li><a href="Other/Blog">Blog</a></li> <!-- Added Blog option -->
                 <li><a href="Other/Contact">Contact</a></li>
             </ul>
         </nav>
         <div class="content">
+            <span class="title"></span>
             <h1>Hello, I’m <span>Ahsan</span></h1>
             <p>I’m a Machine Learning Researcher</p>
             <a href="Ahsan.pdf" class="btn">Download CV</a>
         </div>
     </div>
-
-    <!-- Right side (Exotic Content) -->
-    <div class="exotic-container">
-        <div class="exotic-content">
-            <h2>Discover the Exotic</h2>
-            <p>Explore the world of AI and Machine Learning in an exciting journey.</p>
-            <p>Stay tuned for exotic discoveries and innovations!</p>
-        </div>
-    </div>
-
-    <!-- Footer (No change from previous) -->
+    <center>
     <footer>
         <a href="https://www.linkedin.com/in/israt-zarin/" class="fa fa-linkedin"></a>
         <a href="mailto:zarindola@gmail.com" class="fa fa-envelope"></a>
         <a href="https://github.com/ZarinIsrat" class="fa fa-github"></a>
     </footer>
+    </center>
 </body>
 </html>

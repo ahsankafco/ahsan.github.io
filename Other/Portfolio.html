@@ -1,49 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Personal Portfolio Website</title>
-    <!----CSS link----->
+    <meta charset="UTF-8">
+    <title>Ahsan Ul Islam - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-	<style> 
-		.about{
-		    margin-left: 100px;
-		 }</style>
-		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <!-- Add your CSS styles for the portfolio page here -->
+    <style>
+        /* Style for the portfolio content section */
+        .portfolio {
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Style for skills section */
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skill-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .skill-list li {
+            margin-bottom: 10px;
+        }
+
+        /* Style for education section */
+        .education {
+            margin-top: 20px;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Style for links section */
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        /* Style for experience section */
+        .experience {
+            margin-top: 20px;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .experience-item p {
+            margin-top: 10px;
+        }
+
+        /* Style for research projects section */
+        .research-projects {
+            margin-top: 20px;
+        }
+
+        .research-project-item {
+            margin-bottom: 20px;
+        }
+
+        .research-project-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .research-project-item p {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="hero">
-             <nav>
-           
+    <header>
+        <h1>Ahsan Ul Islam</h1>
+        <p><a href="https://ahsankafco.github.io/">https://ahsankafco.github.io/</a></p>
+        <p>Email: ahsankafco@gmail.com | Phone: 936.668.0239</p>
+    </header>
 
-            <ul>
-                <li><a href="../index">Home</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="Research">Research</a></li>
-                <li><a href="Contact">Contact</a></li>
+    <div class="portfolio">
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skill-list">
+                <li>Python (NumPy, Pandas, Scikit-learn, Keras, Matplotlib, seaborn, PyTorch, Flask)</li>
+                <li>SQL</li>
+                <li>Java, HTML, C, and C++</li>
+                <li>MATLAB</li>
+                <li>Machine Learning (Deep Learning, Edge Detection, ML Algorithms, Time Series Forecasting, Image Feature Extraction, Image Classification, Natural Language Processing, Data Visualization)</li>
+                <li>Software (Anaconda, Jupyter Notebook, Google Colab, Pycharm, Git and Github, MySQL and Oracle, Eclipse, Code::Blocks)</li>
             </ul>
+        </section>
 
+        <!-- Education Section -->
+        <section class="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3>MS in Computing and Data Science</h3>
+                <p>Sam Houston State University, Exp December 2023 | Huntsville, Tx</p>
+                <p>Thesis: Gender and Ethnicity Bias in Deep Learning | CGPA: 3.87</p>
+            </div>
+            <div class="education-item">
+                <h3>BS in Electrical and Electronics Engineering</h3>
+                <p>American Int. University-BD, Dec 2015 | Dhaka, Bangladesh</p>
+                <p>Graduated with Honors | CGPA: 3.80</p>
+            </div>
+        </section>
 
-        </nav>
-        <div class="about">
-            <span class="title"></span>
-			<h2>Research</h2>
-			<ul>
-			<li>Secure wireless intelligent network using cryptography-ICO-2022[Published]</li>
-			<li>Execution examination of different edge detction algorithms [Publishe]ISMODE2022</li>
-			<li>Bengali Fake news detection with Passive-Aggressive classifier and Extra Tree classifier(Accepted)</li>
-			
-			</ul>
-		</div>
-             <center>
-		<footer>
-			<a href="https://www.linkedin.com/in/israt-zarin/" class="fa fa-linkedin"></a>
-			<a href="mailto:zarindola@gmail.com" class="fa fa-envelope"></a>
-			<a href="https://github.com/ZarinIsrat" class="fa fa-github"></a>
-		</footer>
-		</center>	
-          
+        <!-- Links Section -->
+        <section class="links">
+            <h2 class="section-title">Links</h2>
+            <a href="https://github.com/ahsankafco">Github: ahsankafco</a>
+            <a href="https://www.linkedin.com/in/ahsankafco">LinkedIn: ahsankafco</a>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <h3>SHSU | Graduate Assistant/Research Assistant</h3>
+                <p>May 2022 – present | Huntsville, Tx</p>
+                <ul>
+                    <li>Assisting the instructor in various tasks including attendance, exam proctoring, and grading.</li>
+                    <li>Tutoring and mentoring for various computer science and data-related courses.</li>
+                    <li>Researcher for U.S. Department of Homeland Security projects.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>4K ENGINEERING (CONTRACTUAL) FOR ROBI AXIATA LTD RNO | Project Manager</h3>
+                <p>Jan 2018 – April 2022 | Dhaka, Bangladesh</p>
+                <ul>
+                    <li>Extensive experience as a Radio Network Design and Optimization Engineer at Robi.</li>
+                    <li>Proficiency in finalizing FAC procedures for 3G and LTE clusters, generating specialized CTO reports, and conducting RNP simulations.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>4K ENGINEERING (CONTRACTUAL) FOR ROBI AXIATA LTD RNP | Project Coordinator</h3>
+                <p>Jan 2016 – Dec 2017 | Dhaka, Bangladesh</p>
+                <ul>
+                    <li>2G/3G/4G Radio Network Design and Optimization Engineer at Robi Axiata LTD.</li>
+                    <li>Proficient in planning and maintaining network quality and conducting RF issue diagnosis.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Research Projects Section -->
+        <section class="research-projects">
+            <h2 class="section-title">Research Projects</h2>
+            <div class="research-project-item">
+                <h3>GENDER AND ETHNICITY BIAS IN DEEP LEARNING (Submitted for Publication)</h3>
+                <p>Investigated and mitigated gender and ethnicity bias in AI models through comprehensive analysis and innovative strategies.</p>
+                <p>Conducted in-depth evaluations of model performance, including precision, recall, and F1-score metrics, to address bias concerns effectively.</p>
+            </div>
+            <div class="research-project-item">
+                <h3>SOCIAL NETWORK ANALYSIS USING DEEP LEARNING (Publishable)</h3>
+                <p>Conducted advanced network analysis of the Enron email dataset, identifying key communication hubs and central actors.</p>
+                <p>Employed state-of-the-art transformer-based language models for sentiment analysis and optimized accuracy through ensemble techniques.</p>
+            </div>
+            <div class="research-project-item">
+                <h3>EXECUTION EXAMINATION OF DISTINCTIVE EDGE DETECTION ALGORITHMS (Published)</h3>
+                <p>Conducted research on edge detection techniques, specifically focusing on evaluating the performance of Canny and Prewitt methods on satellite images.</p>
+                <p>Employed IQA metrics (SSIM, MSE, PSNR, RMSE) to assess image quality, finding Canny edge detection superior to Prewitt for satellite images with Gaussian noise.</p>
+            </div>
+        </section>
     </div>
 </body>
 </html>

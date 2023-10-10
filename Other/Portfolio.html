@@ -2,190 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ahsan Ul Islam - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Add your CSS styles for the portfolio page here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
     <style>
-        /* Style for the portfolio content section */
-        .portfolio {
-            padding: 20px;
-        }
-
-        .section-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        /* Style for skills section */
-        .skills {
-            margin-top: 20px;
-        }
-
-        .skill-list {
-            list-style-type: none;
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
 
-        .skill-list li {
-            margin-bottom: 10px;
+        .skills {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
         }
 
-        /* Style for education section */
-        .education {
-            margin-top: 20px;
-        }
-
-        .education-item {
+        .section__title {
+            font-size: 24px;
             margin-bottom: 20px;
         }
 
-        .education-item h3 {
-            font-size: 18px;
-            font-weight: bold;
+        .skills__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
 
-        /* Style for links section */
-        .links {
-            margin-top: 20px;
-        }
-
-        .links a {
-            display: block;
-            margin-bottom: 10px;
-            text-decoration: none;
-        }
-
-        /* Style for experience section */
-        .experience {
-            margin-top: 20px;
-        }
-
-        .experience-item {
+        .skills__content {
+            width: 48%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
             margin-bottom: 20px;
         }
 
-        .experience-item h3 {
-            font-size: 18px;
-            font-weight: bold;
+        .skills__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .experience-item p {
+        .skills__icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .skills__title {
+            font-size: 20px;
+        }
+
+        .skills__subtitle {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .skills__list {
             margin-top: 10px;
         }
 
-        /* Style for research projects section */
-        .research-projects {
-            margin-top: 20px;
+        .skills__data {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
         }
 
-        .research-project-item {
-            margin-bottom: 20px;
+        .skills__name {
+            font-size: 16px;
         }
 
-        .research-project-item h3 {
-            font-size: 18px;
-            font-weight: bold;
+        .skills__number {
+            font-size: 14px;
+            color: #555;
         }
 
-        .research-project-item p {
-            margin-top: 10px;
+        .skills__bar {
+            flex-grow: 1;
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .skills__percentage {
+            height: 100%;
+            border-radius: 5px;
+            background-color: #3498db;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ahsan Ul Islam</h1>
-        <p><a href="https://ahsankafco.github.io/">https://ahsankafco.github.io/</a></p>
-        <p>Email: ahsankafco@gmail.com | Phone: 936.668.0239</p>
-    </header>
+    <div class="skills">
+        <h2 class="section__title">Skills</h2>
 
-    <div class="portfolio">
-        <!-- Skills Section -->
-        <section class="skills">
-            <h2 class="section-title">Skills</h2>
-            <ul class="skill-list">
-                <li>Python (NumPy, Pandas, Scikit-learn, Keras, Matplotlib, seaborn, PyTorch, Flask)</li>
-                <li>SQL</li>
-                <li>Java, HTML, C, and C++</li>
-                <li>MATLAB</li>
-                <li>Machine Learning (Deep Learning, Edge Detection, ML Algorithms, Time Series Forecasting, Image Feature Extraction, Image Classification, Natural Language Processing, Data Visualization)</li>
-                <li>Software (Anaconda, Jupyter Notebook, Google Colab, Pycharm, Git and Github, MySQL and Oracle, Eclipse, Code::Blocks)</li>
-            </ul>
-        </section>
+        <!-- Skill 1: Development -->
+        <div class="skills__container">
+            <div class="skills__content">
+                <div class="skills__header">
+                    <i class="skills__icon">👨‍💻</i>
+                    <div>
+                        <h1 class="skills__title">Development</h1>
+                        <span class="skills__subtitle">All About the Core</span>
+                    </div>
+                </div>
+                <div class="skills__list">
+                    <!-- Add your development skills here -->
+                    <div class="skills__data">
+                        <div class="skills__name">Python</div>
+                        <div class="skills__number">90%</div>
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <!-- Add more skills as needed -->
+                </div>
+            </div>
+        </div>
 
-        <!-- Education Section -->
-        <section class="education">
-            <h2 class="section-title">Education</h2>
-            <div class="education-item">
-                <h3>MS in Computing and Data Science</h3>
-                <p>Sam Houston State University, Exp December 2023 | Huntsville, Tx</p>
-                <p>Thesis: Gender and Ethnicity Bias in Deep Learning | CGPA: 3.87</p>
+        <!-- Skill 2: Frameworks -->
+        <div class="skills__container">
+            <div class="skills__content">
+                <div class="skills__header">
+                    <i class="skills__icon">🛠️</i>
+                    <div>
+                        <h1 class="skills__title">Frameworks</h1>
+                        <span class="skills__subtitle">Everyone Needs Support</span>
+                    </div>
+                </div>
+                <div class="skills__list">
+                    <!-- Add your framework skills here -->
+                    <div class="skills__data">
+                        <div class="skills__name">NumPy</div>
+                        <div class="skills__number">80%</div>
+                        <div class="skills__bar">
+                            <div class="skills__percentage" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <!-- Add more skills as needed -->
+                </div>
             </div>
-            <div class="education-item">
-                <h3>BS in Electrical and Electronics Engineering</h3>
-                <p>American Int. University-BD, Dec 2015 | Dhaka, Bangladesh</p>
-                <p>Graduated with Honors | CGPA: 3.80</p>
-            </div>
-        </section>
+        </div>
 
-        <!-- Links Section -->
-        <section class="links">
-            <h2 class="section-title">Links</h2>
-            <a href="https://github.com/ahsankafco">Github: ahsankafco</a>
-            <a href="https://www.linkedin.com/in/ahsankafco">LinkedIn: ahsankafco</a>
-        </section>
+        <!-- Add more skill sections as needed -->
 
-        <!-- Experience Section -->
-        <section class="experience">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-item">
-                <h3>SHSU | Graduate Assistant/Research Assistant</h3>
-                <p>May 2022 – present | Huntsville, Tx</p>
-                <ul>
-                    <li>Assisting the instructor in various tasks including attendance, exam proctoring, and grading.</li>
-                    <li>Tutoring and mentoring for various computer science and data-related courses.</li>
-                    <li>Researcher for U.S. Department of Homeland Security projects.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>4K ENGINEERING (CONTRACTUAL) FOR ROBI AXIATA LTD RNO | Project Manager</h3>
-                <p>Jan 2018 – April 2022 | Dhaka, Bangladesh</p>
-                <ul>
-                    <li>Extensive experience as a Radio Network Design and Optimization Engineer at Robi.</li>
-                    <li>Proficiency in finalizing FAC procedures for 3G and LTE clusters, generating specialized CTO reports, and conducting RNP simulations.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>4K ENGINEERING (CONTRACTUAL) FOR ROBI AXIATA LTD RNP | Project Coordinator</h3>
-                <p>Jan 2016 – Dec 2017 | Dhaka, Bangladesh</p>
-                <ul>
-                    <li>2G/3G/4G Radio Network Design and Optimization Engineer at Robi Axiata LTD.</li>
-                    <li>Proficient in planning and maintaining network quality and conducting RF issue diagnosis.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Research Projects Section -->
-        <section class="research-projects">
-            <h2 class="section-title">Research Projects</h2>
-            <div class="research-project-item">
-                <h3>GENDER AND ETHNICITY BIAS IN DEEP LEARNING (Submitted for Publication)</h3>
-                <p>Investigated and mitigated gender and ethnicity bias in AI models through comprehensive analysis and innovative strategies.</p>
-                <p>Conducted in-depth evaluations of model performance, including precision, recall, and F1-score metrics, to address bias concerns effectively.</p>
-            </div>
-            <div class="research-project-item">
-                <h3>SOCIAL NETWORK ANALYSIS USING DEEP LEARNING (Publishable)</h3>
-                <p>Conducted advanced network analysis of the Enron email dataset, identifying key communication hubs and central actors.</p>
-                <p>Employed state-of-the-art transformer-based language models for sentiment analysis and optimized accuracy through ensemble techniques.</p>
-            </div>
-            <div class="research-project-item">
-                <h3>EXECUTION EXAMINATION OF DISTINCTIVE EDGE DETECTION ALGORITHMS (Published)</h3>
-                <p>Conducted research on edge detection techniques, specifically focusing on evaluating the performance of Canny and Prewitt methods on satellite images.</p>
-                <p>Employed IQA metrics (SSIM, MSE, PSNR, RMSE) to assess image quality, finding Canny edge detection superior to Prewitt for satellite images with Gaussian noise.</p>
-            </div>
-        </section>
     </div>
 </body>
 </html>
